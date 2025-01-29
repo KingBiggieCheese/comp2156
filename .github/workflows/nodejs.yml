@@ -13,16 +13,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Setup Node.js
+      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '16'
 
       - name: Install dependencies
-        run: npm install
+        run: |
+          npm install
 
-      - name: Run Tests (if any)
-        run: npm test
+      - name: Run tests
+        run: |
+          npm test
