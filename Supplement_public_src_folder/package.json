@@ -18,6 +18,8 @@
     "test": "echo \"Error: no test specified\"",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
